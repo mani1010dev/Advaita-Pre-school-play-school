@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import DayAtSchool from "@/components/DayAtSchool";
 import Admission from "@/components/Admission";
+import SocialHub from "@/components/SocialHub";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ const Index = () => (
     <Gallery />
     <WhyChooseUs />
     <DayAtSchool />
+    <SocialHub />
     <Admission />
     <Contact />
     <Footer />
