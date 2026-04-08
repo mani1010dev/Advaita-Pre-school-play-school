@@ -78,7 +78,7 @@ const Contact = () => {
             className="space-y-5 flex flex-col justify-center"
           >
             <a
-              href="tel:+911234567890"
+              href="tel:+919500055350"
               className="glass-card p-6 flex items-center gap-4 hover:shadow-glow transition-shadow group"
             >
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -86,12 +86,12 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-heading font-bold text-foreground">Call Us</h4>
-                <p className="text-sm font-body text-muted-foreground">+91 123 456 7890</p>
+                <p className="text-sm font-body text-muted-foreground">+91 95000 55350</p>
               </div>
             </a>
 
             <a
-              href="https://wa.me/911234567890"
+              href="https://wa.me/919500055350"
               target="_blank"
               rel="noopener noreferrer"
               className="glass-card p-6 flex items-center gap-4 hover:shadow-glow transition-shadow group"

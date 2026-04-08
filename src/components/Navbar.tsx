@@ -44,9 +44,6 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button size="sm" className="rounded-full font-body">
-            <Phone className="w-4 h-4 mr-1" /> Call Us
-          </Button>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -73,9 +70,6 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button size="sm" className="rounded-full font-body mt-2 w-fit">
-                <Phone className="w-4 h-4 mr-1" /> Call Us
-              </Button>
             </div>
           </motion.div>
         )}

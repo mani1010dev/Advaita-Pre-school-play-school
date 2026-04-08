@@ -137,17 +137,21 @@ const Hero = () => {
           >
             <Button
               size="lg"
+              asChild
               className="group rounded-full text-base font-body font-bold px-8 shadow-glow hover:shadow-[0_0_50px_-8px_hsl(var(--sky)/0.45)] transition-shadow duration-500"
             >
-              Enroll Now
-              <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <a href="#contact">
+                Enroll Now
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
+              asChild
               className="rounded-full text-base font-body font-bold px-8 border-[hsl(var(--sky))]/40 text-foreground hover:bg-[hsl(var(--sky))]/10 hover:border-[hsl(var(--sky))]/60 backdrop-blur-sm transition-all duration-300"
             >
-              Book a Visit
+              <a href="#contact">Book a Visit</a>
             </Button>
           </motion.div>
         </div>
