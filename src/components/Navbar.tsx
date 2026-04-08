@@ -23,11 +23,13 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border"
     >
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <a href="#home" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-lg">A</span>
-          </div>
-          <span className="font-heading font-bold text-xl text-foreground">
+        <a href="#home" className="flex items-center gap-3">
+          <img 
+            src="/play school logo.png" 
+            alt="Advaita Playschool Logo" 
+            className="h-12 w-auto object-contain"
+          />
+          <span className="font-heading font-bold text-xl text-foreground hidden sm:block">
             Advaita<span className="text-primary"> Playschool</span>
           </span>
         </a>

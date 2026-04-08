@@ -3,10 +3,12 @@ import { Heart } from "lucide-react";
 const Footer = () => (
   <footer className="py-10 px-4 border-t border-border bg-card">
     <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
-      <div className="flex items-center gap-2">
-        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-          <span className="text-primary-foreground font-heading font-bold text-sm">A</span>
-        </div>
+      <div className="flex items-center gap-3">
+        <img 
+          src="/play school logo.png" 
+          alt="Advaita Playschool Logo" 
+          className="h-10 w-auto object-contain"
+        />
         <span className="font-heading font-bold text-foreground">Advaita Playschool</span>
       </div>
       <p className="text-sm font-body text-muted-foreground flex items-center gap-1">
