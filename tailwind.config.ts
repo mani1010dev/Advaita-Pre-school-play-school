@@ -56,6 +56,11 @@ export default {
         mint: "hsl(var(--mint))",
         sunshine: "hsl(var(--sunshine))",
         lavender: "hsl(var(--lavender))",
+        rose: "hsl(var(--rose))",
+        "rainbow-red": "hsl(var(--rainbow-red))",
+        "rainbow-orange": "hsl(var(--rainbow-orange))",
+        "rainbow-green": "hsl(var(--rainbow-green))",
+        "rainbow-indigo": "hsl(var(--rainbow-indigo))",
         cream: {
           DEFAULT: "hsl(var(--cream))",
           dark: "hsl(var(--cream-dark))",
