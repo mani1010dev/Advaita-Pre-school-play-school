@@ -37,7 +37,7 @@ const VideoTour = () => {
             transition={{ delay: 0.2 }}
             className="text-lg text-muted-foreground font-body max-w-2xl mx-auto"
           >
-            Step inside Advaita Playschool and experience the joy, creativity, and nurturing environment we offer every day.
+            Step inside Advaita Pre School and experience the joy, creativity, and nurturing environment we offer every day.
           </motion.p>
         </div>
 
@@ -51,6 +51,10 @@ const VideoTour = () => {
           <video 
             className="w-full h-auto aspect-video object-cover"
             controls
+            autoPlay
+            muted
+            loop
+            playsInline
             preload="metadata"
             poster="/hero-bg.png" // Using the beautiful hero bg as a fallback poster
           >

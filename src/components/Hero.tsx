@@ -110,11 +110,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="mt-6 font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[3.5rem] xl:text-7xl text-foreground leading-[1.1] tracking-tight"
+            className="mt-6 font-heading font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] xl:text-8xl leading-[1.1] tracking-tight"
           >
-            Where Little Minds
+            <span className="text-[#E91E63] drop-shadow-sm">Advaita</span>
             <br />
-            <span className="text-gradient">Grow & Shine</span>
+            <span className="text-[#1A56DB] drop-shadow-sm">Pre School</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -122,10 +122,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="mt-5 text-lg md:text-xl text-muted-foreground font-body max-w-lg mx-auto leading-relaxed"
+            className="mt-6 text-xl md:text-2xl text-foreground/80 font-body font-bold max-w-lg mx-auto leading-relaxed italic border-y border-[hsl(var(--sky)/0.3)] py-3"
           >
-            A safe, joyful space for your child to learn, explore, and grow
-            through play-based early education designed by experts.
+            Excellence in early years
           </motion.p>
 
           {/* CTA buttons */}

@@ -25,7 +25,7 @@ const Announcements = () => {
             Announcements & <span className="text-gradient">Events</span>
           </h2>
           <p className="mt-4 text-muted-foreground font-body text-lg max-w-lg mx-auto">
-            Stay up to date with the latest happenings at our playschool
+            Stay up to date with the latest happenings at our Pre School
           </p>
         </motion.div>
 

@@ -11,6 +11,7 @@ import SocialHub from "@/components/SocialHub";
 import Admission from "@/components/Admission";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
@@ -27,6 +28,7 @@ const Index = () => (
     <Admission />
     <Contact />
     <Footer />
+    <WhatsAppWidget />
   </div>
 );
 

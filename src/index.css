@@ -134,6 +134,121 @@
   }
 }
 
+/* ═══════════════════════════════════════════
+   WhatsApp Floating Widget
+   ═══════════════════════════════════════════ */
+
+/* Floating action button */
+.wa-fab {
+  @apply relative flex items-center justify-center w-16 h-16 rounded-full shadow-lg cursor-pointer;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  transition: box-shadow 0.3s ease;
+}
+.wa-fab:hover {
+  box-shadow: 0 6px 30px -4px rgba(37, 211, 102, 0.55);
+}
+
+/* Pulse ring behind FAB */
+.wa-pulse {
+  @apply absolute inset-0 rounded-full;
+  background: rgba(37, 211, 102, 0.35);
+  animation: waPulse 2s ease-out infinite;
+}
+@keyframes waPulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+
+/* Tooltip badge */
+.wa-tooltip {
+  @apply flex items-center gap-2 px-4 py-2.5 rounded-2xl shadow-lg cursor-pointer;
+  background: white;
+  border: 1px solid hsl(var(--border));
+}
+
+/* Chat panel container */
+.wa-panel {
+  @apply rounded-2xl overflow-hidden shadow-2xl;
+  width: min(370px, calc(100vw - 3rem));
+  border: 1px solid hsl(var(--border));
+}
+
+/* Panel header */
+.wa-panel-header {
+  @apply flex items-center justify-between px-5 py-4;
+  background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
+}
+
+/* Avatar wrapper */
+.wa-avatar {
+  @apply relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-white/30;
+}
+.wa-online-dot {
+  @apply absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-[#128c7e];
+  background: #25d366;
+}
+
+/* Chat body */
+.wa-panel-body {
+  @apply relative px-4 py-5;
+  background: #e5ddd5;
+  min-height: 120px;
+}
+
+/* WhatsApp-style wallpaper pattern */
+.wa-chat-pattern {
+  @apply absolute inset-0 opacity-[0.06] pointer-events-none;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-opacity='1'%3E%3Cpath d='M30 5l3 6h-6l3-6zm10 10l6 3v-6l-6 3zM10 15l6 3v-6l-6 3zm20 15l3 6h-6l3-6zM5 30l6 3v-6l-6 3zm50 0l-6 3v-6l6 3zm-25 15l3 6h-6l3-6zm10 5l6-3v6l-6-3zM10 45l6-3v6l-6-3z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Chat bubble */
+.wa-bubble {
+  @apply relative bg-white rounded-xl rounded-tl-sm px-4 py-3 shadow-sm;
+  max-width: 85%;
+}
+.wa-bubble::before {
+  content: '';
+  @apply absolute -left-1.5 top-0 w-3 h-3;
+  background: white;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+/* Footer input area */
+.wa-panel-footer {
+  @apply px-4 py-3;
+  background: #f0f0f0;
+}
+.wa-input-row {
+  @apply flex items-end gap-2;
+}
+.wa-input {
+  @apply flex-1 rounded-2xl px-4 py-2.5 text-sm resize-none border-0 outline-none;
+  background: white;
+  font-family: var(--font-body);
+  max-height: 80px;
+}
+.wa-input:focus {
+  box-shadow: 0 0 0 2px #25d36640;
+}
+.wa-send-btn {
+  @apply flex items-center justify-center w-10 h-10 rounded-full text-white shrink-0;
+  background: #25d366;
+  transition: background 0.2s ease;
+}
+.wa-send-btn:hover {
+  background: #128c7e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .wa-panel {
+    width: calc(100vw - 1.5rem);
+  }
+  .wa-fab {
+    @apply w-14 h-14;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
